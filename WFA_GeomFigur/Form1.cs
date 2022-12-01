@@ -16,5 +16,10 @@ namespace WFA_GeomFigur
         {
             InitializeComponent();
         }
+
+        private void BTN_figurHinzufuegen_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
