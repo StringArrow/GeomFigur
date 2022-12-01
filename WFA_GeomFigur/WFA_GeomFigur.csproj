@@ -49,6 +49,7 @@
     <Compile Include="class\CFlaeche.cs" />
     <Compile Include="class\CGeomFigur.cs" />
     <Compile Include="class\CKoerper.cs" />
+    <Compile Include="class\CObjects.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
