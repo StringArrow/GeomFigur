@@ -32,15 +32,12 @@ namespace WFA_GeomFigur
         
         public override double getFlaecheninhalt()
         {
-            setFlaecheninhalt(seitenlaenge * 2);
-            return getFlaecheninhalt();
+            return Math.Pow(seitenlaenge, 2);
         }
         public override double getUmfang()
         {
-            setUmfang(seitenlaenge * 4);
-            return getUmfang();
+            return Math.Pow(seitenlaenge, 2);
         }
-
 
         public override void zeichneFigur(Graphics graphics, SolidBrush solidBrush, Rectangle coordinates)
         {         

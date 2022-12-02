@@ -21,7 +21,7 @@ namespace WFA_GeomFigur
         private List<CGeomFigur> figuren = new List<CGeomFigur>();
         private void BTN_figurHinzufuegen_Click(object sender, EventArgs e)
         {
-            CGeomFigur figur = new CRechteck(10, 20, Color.Green);
+            CGeomFigur figur = new CWuerfel(10, Color.Blue);
             figur.zeichneFigurImPanel(PL_formen);           
         }
     }

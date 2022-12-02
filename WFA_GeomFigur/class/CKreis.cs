@@ -40,13 +40,11 @@ namespace WFA_GeomFigur
 
         public override double getFlaecheninhalt()
         {
-            setFlaecheninhalt(2 * radius * Math.PI);
-            return getFlaecheninhalt();
+            return 2 * radius * Math.PI;
         }
         public override double getUmfang()
         {
-            setUmfang(2 * Math.PI * radius);
-            return getUmfang();
+            return 2 * Math.PI * radius;
         }
 
         public override void zeichneFigur(Graphics graphics, SolidBrush solidBrush, Rectangle coordinates)

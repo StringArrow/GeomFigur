@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace WFA_GeomFigur
 {
-    internal class CGeomFigur
+    internal abstract class CGeomFigur
     {
         //Attribute
         private Color farbe;
@@ -35,10 +35,13 @@ namespace WFA_GeomFigur
         {
             //Panel leeren
             panel.Controls.Clear();
+            //Überzeichnen mit leerem Dreieck
+            SolidBrush clearBrush = new SolidBrush(Color.Transparent);
+            Graphics graphic = panel.CreateGraphics();
+            graphic.FillRectangle(clearBrush, new Rectangle(0, 0, panel.Width, panel.Height));
 
             //Figur Zeichnen
             SolidBrush sb = new SolidBrush(farbe);
-            Graphics graphic = panel.CreateGraphics();
 
             //Größe und Position ermitteln
             Rectangle coordinates = berechneMaxFigurGroesse(panel);

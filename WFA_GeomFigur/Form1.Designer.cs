@@ -64,9 +64,12 @@
             // 
             // PL_formen
             // 
+            this.PL_formen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PL_formen.Location = new System.Drawing.Point(310, 60);
             this.PL_formen.Name = "PL_formen";
-            this.PL_formen.Size = new System.Drawing.Size(843, 377);
+            this.PL_formen.Size = new System.Drawing.Size(866, 377);
             this.PL_formen.TabIndex = 4;
             // 
             // Form1
