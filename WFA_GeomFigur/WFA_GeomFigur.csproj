@@ -52,6 +52,7 @@
     <Compile Include="class\CKreis.cs" />
     <Compile Include="class\CQuadrat.cs" />
     <Compile Include="class\CRechteck.cs" />
+    <Compile Include="class\CKugel.cs" />
     <Compile Include="class\CWuerfel.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

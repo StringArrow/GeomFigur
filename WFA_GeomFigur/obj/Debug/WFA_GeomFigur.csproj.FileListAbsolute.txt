@@ -9,3 +9,14 @@ C:\Users\Schnurpfeil\source\repos\StringArrow\GeomFigur\WFA_GeomFigur\obj\Debug\
 C:\Users\Schnurpfeil\source\repos\StringArrow\GeomFigur\WFA_GeomFigur\obj\Debug\WFA_GeomFigur.csproj.CoreCompileInputs.cache
 C:\Users\Schnurpfeil\source\repos\StringArrow\GeomFigur\WFA_GeomFigur\obj\Debug\WFA_GeomFigur.exe
 C:\Users\Schnurpfeil\source\repos\StringArrow\GeomFigur\WFA_GeomFigur\obj\Debug\WFA_GeomFigur.pdb
+C:\Users\schnu\source\repos\StringArrow\GeomFigur\WFA_GeomFigur\obj\Debug\WFA_GeomFigur.csproj.AssemblyReference.cache
+C:\Users\schnu\source\repos\StringArrow\GeomFigur\WFA_GeomFigur\obj\Debug\WFA_GeomFigur.csproj.SuggestedBindingRedirects.cache
+C:\Users\schnu\source\repos\StringArrow\GeomFigur\WFA_GeomFigur\obj\Debug\WFA_GeomFigur.Form1.resources
+C:\Users\schnu\source\repos\StringArrow\GeomFigur\WFA_GeomFigur\obj\Debug\WFA_GeomFigur.Properties.Resources.resources
+C:\Users\schnu\source\repos\StringArrow\GeomFigur\WFA_GeomFigur\obj\Debug\WFA_GeomFigur.csproj.GenerateResource.cache
+C:\Users\schnu\source\repos\StringArrow\GeomFigur\WFA_GeomFigur\obj\Debug\WFA_GeomFigur.csproj.CoreCompileInputs.cache
+C:\Users\schnu\source\repos\StringArrow\GeomFigur\WFA_GeomFigur\obj\Debug\WFA_GeomFigur.exe
+C:\Users\schnu\source\repos\StringArrow\GeomFigur\WFA_GeomFigur\obj\Debug\WFA_GeomFigur.pdb
+C:\Users\schnu\source\repos\StringArrow\GeomFigur\WFA_GeomFigur\bin\Debug\WFA_GeomFigur.exe.config
+C:\Users\schnu\source\repos\StringArrow\GeomFigur\WFA_GeomFigur\bin\Debug\WFA_GeomFigur.exe
+C:\Users\schnu\source\repos\StringArrow\GeomFigur\WFA_GeomFigur\bin\Debug\WFA_GeomFigur.pdb
