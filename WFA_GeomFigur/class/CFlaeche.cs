@@ -13,21 +13,25 @@ namespace WFA_GeomFigur
         private double umfang;
 
         //Methoden
-        public double getFlaecheninhalt()
+        public virtual double getFlaecheninhalt()
         {
-            return flaecheninhalt;
+            //Methode soll von Spezialisierungen implementiert werden
+            throw new NotImplementedException();
         }
-        public void setFlaecheninhalt(double newFlaecheninhalt)
-        { 
-            flaecheninhalt = newFlaecheninhalt; 
-        }
-        public double getUmfang()
+        public virtual void setFlaecheninhalt(double newFlaecheninhalt)
         {
-            return umfang;
+            //Methode soll von Spezialisierungen implementiert werden
+            throw new NotImplementedException();
         }
-        public void setUmfang(double newUmfang)
+        public virtual double getUmfang()
         {
-            umfang = newUmfang;
+            //Methode soll von Spezialisierungen implementiert werden
+            throw new NotImplementedException();
+        }
+        public virtual void setUmfang(double newUmfang)
+        {
+            //Methode soll von Spezialisierungen implementiert werden
+            throw new NotImplementedException();
         }
     }
 }

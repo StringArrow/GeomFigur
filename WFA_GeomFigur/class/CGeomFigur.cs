@@ -3,21 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace WFA_GeomFigur
 {
     internal class CGeomFigur
     {
         //Attribute
-        private string farbe;
+        private Color farbe;
         private string bezeichnung;
 
         //Methoden
-        public string getFarbe()
+        public Color getFarbe()
         {
             return farbe;
         }
-        public void setFarbe(string newFarbe)
+        public void setFarbe(Color newFarbe)
         {
             farbe = newFarbe;
         }
@@ -28,6 +30,52 @@ namespace WFA_GeomFigur
         public void setBezeichnung(string newBezeichnung)
         {
             bezeichnung = newBezeichnung;
+        }
+        public void zeichneFigurImPanel(Panel panel)
+        {
+            //Panel leeren
+            panel.Controls.Clear();
+
+            //Figur Zeichnen
+            SolidBrush sb = new SolidBrush(farbe);
+            Graphics graphic = panel.CreateGraphics();
+
+            //Größe und Position ermitteln
+            Rectangle coordinates = berechneMaxFigurGroesse(panel);
+
+            //Figur zeichnen
+            zeichneFigur(graphic, sb, coordinates);
+        }
+
+        public virtual Rectangle berechneMaxFigurGroesse(Panel panel)
+        {
+            Size panelSize = panel.Size;
+
+            //Maximalgröße der Figur im Panel errechnen
+            int x = 0;
+            int y = 0;
+            int width;
+            int height;
+
+            //gleiche Seitenlänge
+            if (panelSize.Width >= panelSize.Height)
+            {
+                width = panelSize.Height;
+                height = width;
+            }
+            else
+            {
+                height = panelSize.Width;
+                width = height;
+            }
+
+            return new Rectangle(x, y, width, height);
+        }
+
+        public virtual void zeichneFigur(Graphics graphics, SolidBrush solidBrush, Rectangle coordinates)
+        {
+            //Methode soll von Spezialisierungen implementiert werden
+            throw new NotImplementedException();
         }
     }
 }

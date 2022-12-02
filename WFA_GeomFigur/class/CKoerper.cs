@@ -13,21 +13,25 @@ namespace WFA_GeomFigur
         private double oberflaeche;
 
         //Methoden
-        public double getVolumen() 
-        { 
-            return volumen; 
+        public virtual double getVolumen() 
+        {
+            //Methode soll von Spezialisierungen implementiert werden
+            throw new NotImplementedException();
         }
-        public void setVolumen(double newVolumen)
-        { 
-            volumen = newVolumen; 
+        public virtual void setVolumen(double newVolumen)
+        {
+            //Methode soll von Spezialisierungen implementiert werden
+            throw new NotImplementedException();
         }
-        public double getOberflaeche() 
-        { 
-            return oberflaeche; 
+        public virtual double getOberflaeche() 
+        {
+            //Methode soll von Spezialisierungen implementiert werden
+            throw new NotImplementedException();
         }
-        public void setOberflaeche(double newOberflaeche) 
-        { 
-            oberflaeche = newOberflaeche; 
+        public virtual void setOberflaeche(double newOberflaeche) 
+        {
+            //Methode soll von Spezialisierungen implementiert werden
+            throw new NotImplementedException();
         }
     }
 }

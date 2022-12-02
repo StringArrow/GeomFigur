@@ -18,16 +18,11 @@ namespace WFA_GeomFigur
         }
 
         //Liste mit den hinzugefügten Figuren
-        private List<IDynamicFigure> figures = new List<IDynamicFigure>();
-
+        private List<CGeomFigur> figuren = new List<CGeomFigur>();
         private void BTN_figurHinzufuegen_Click(object sender, EventArgs e)
         {
-            CFlaeche flaeche = new CFlaeche();
-            flaeche.setFarbe("Braun");
-            flaeche.setFlaecheninhalt(12.3);
-            flaeche.setBezeichnung("Ich bin eine Fläche");
-
-            //figures.Add(flaeche);
+            CGeomFigur figur = new CRechteck(10, 20, Color.Green);
+            figur.zeichneFigurImPanel(PL_formen);           
         }
     }
 }

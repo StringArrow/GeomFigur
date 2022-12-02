@@ -31,6 +31,7 @@
             this.LBL_figuren = new System.Windows.Forms.Label();
             this.LV_figuren = new System.Windows.Forms.ListView();
             this.BTN_figurHinzufuegen = new System.Windows.Forms.Button();
+            this.PL_formen = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // LBL_figuren
@@ -61,11 +62,19 @@
             this.BTN_figurHinzufuegen.UseVisualStyleBackColor = true;
             this.BTN_figurHinzufuegen.Click += new System.EventHandler(this.BTN_figurHinzufuegen_Click);
             // 
+            // PL_formen
+            // 
+            this.PL_formen.Location = new System.Drawing.Point(310, 60);
+            this.PL_formen.Name = "PL_formen";
+            this.PL_formen.Size = new System.Drawing.Size(843, 377);
+            this.PL_formen.TabIndex = 4;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1188, 450);
+            this.Controls.Add(this.PL_formen);
             this.Controls.Add(this.BTN_figurHinzufuegen);
             this.Controls.Add(this.LV_figuren);
             this.Controls.Add(this.LBL_figuren);
@@ -80,6 +89,7 @@
         private System.Windows.Forms.Label LBL_figuren;
         private System.Windows.Forms.ListView LV_figuren;
         private System.Windows.Forms.Button BTN_figurHinzufuegen;
+        private System.Windows.Forms.Panel PL_formen;
     }
 }
 
