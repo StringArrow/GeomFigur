@@ -41,7 +41,7 @@ namespace WFA_GeomFigur
         {
             //Lord forgive me for what I am about to code ✝
 
-            const double DARKENMULTIPLIER = 0.5;
+            const double ABDUNKELNMULTIPLIKATOR = 0.5;
 
             //Vorderseite initialisieren
             Rectangle front = coordinates;
@@ -52,9 +52,9 @@ namespace WFA_GeomFigur
             //3D-Budget-Zeichner :3
             //Hintergrund ist dunkler als Vordergrund
             Rectangle background = front; 
-            Color darkerColor = Color.FromArgb(Convert.ToInt32(solidBrush.Color.R * DARKENMULTIPLIER),
-                                               Convert.ToInt32(solidBrush.Color.G * DARKENMULTIPLIER),
-                                               Convert.ToInt32(solidBrush.Color.B * DARKENMULTIPLIER));
+            Color darkerColor = Color.FromArgb(Convert.ToInt32(solidBrush.Color.R * ABDUNKELNMULTIPLIKATOR),
+                                               Convert.ToInt32(solidBrush.Color.G * ABDUNKELNMULTIPLIKATOR),
+                                               Convert.ToInt32(solidBrush.Color.B * ABDUNKELNMULTIPLIKATOR));
             SolidBrush darker = new SolidBrush(darkerColor);
 
             //Hintergrund aus vielen Rechtecken zeichnen

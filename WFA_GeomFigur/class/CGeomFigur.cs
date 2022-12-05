@@ -35,8 +35,8 @@ namespace WFA_GeomFigur
         {
             //Panel leeren
             panel.Controls.Clear();
-            //Überzeichnen mit leerem Dreieck
-            SolidBrush clearBrush = new SolidBrush(Color.Transparent);
+            //Überzeichnen mit leerem Bereich
+            SolidBrush clearBrush = new SolidBrush(Color.White);
             Graphics graphic = panel.CreateGraphics();
             graphic.FillRectangle(clearBrush, new Rectangle(0, 0, panel.Width, panel.Height));
 

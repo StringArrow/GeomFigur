@@ -83,6 +83,7 @@
             this.Controls.Add(this.LBL_figuren);
             this.Name = "Form1";
             this.Text = "Geometrische Figuren";
+            this.SizeChanged += new System.EventHandler(this.Form1_SizeChanged);
             this.ResumeLayout(false);
             this.PerformLayout();
 
