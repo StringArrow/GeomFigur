@@ -43,5 +43,17 @@ namespace WFA_GeomFigur
         {         
             graphics.FillRectangle(solidBrush, coordinates);
         }
+
+        public override void showDetailsInListView(ListView listView)
+        {
+            base.showDetailsInListView(listView);
+
+            //Parameter dem AusgabeListView anfügen
+            ListViewItem item;
+
+            item = new ListViewItem("Seitenlänge");
+            item.SubItems.Add(getSeitenlaenge().ToString());
+            listView.Items.Add(item);
+        }
     }
 }

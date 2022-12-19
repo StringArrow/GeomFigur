@@ -80,5 +80,19 @@ namespace WFA_GeomFigur
             //Methode soll von Spezialisierungen implementiert werden
             throw new NotImplementedException();
         }
+
+        public virtual void showDetailsInListView(ListView listView)
+        {
+            //Parameter dem AusgabeListView anfügen
+            ListViewItem item;
+
+            item = new ListViewItem("Bezeichnung");
+            item.SubItems.Add(getBezeichnung());
+            listView.Items.Add(item);
+
+            item = new ListViewItem("Farbe");
+            item.SubItems.Add(getFarbe().Name);
+            listView.Items.Add(item);
+        }
     }
 }

@@ -24,18 +24,11 @@ namespace WFA_GeomFigur
 
         private void BTN_figurHinzufuegen_Click(object sender, EventArgs e)
         {
+
+
             CGeomFigur figur = new CWuerfel(10, Color.Blue);
             figur.setBezeichnung("Test");
             figurenHandler.addFigure(figur);
-
-            figur = new CKugel(10, Color.Blue);
-            figur.setBezeichnung("Kugel");
-            figurenHandler.addFigure(figur);
-
-            figur = new CRechteck(10, 10, Color.Green);
-            figur.setBezeichnung("Rechteck");
-            figurenHandler.addFigure(figur);
-
         }
 
         private void BTN_figurEntfernen_Click(object sender, EventArgs e)
@@ -45,6 +38,7 @@ namespace WFA_GeomFigur
 
         private void Form1_SizeChanged(object sender, EventArgs e)
         {
+            figurenHandler.displaySelectedFigure();
         }
 
         private void LV_figuren_SelectedIndexChanged(object sender, EventArgs e)

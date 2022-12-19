@@ -51,5 +51,21 @@ namespace WFA_GeomFigur
         {
             graphics.FillEllipse(solidBrush, coordinates);
         }
+
+        public override void showDetailsInListView(ListView listView)
+        {
+            base.showDetailsInListView(listView);
+
+            //Parameter dem AusgabeListView anfügen
+            ListViewItem item;
+
+            item = new ListViewItem("Radius");
+            item.SubItems.Add(getRadius().ToString());
+            listView.Items.Add(item);
+
+            item = new ListViewItem("Durchmesser");
+            item.SubItems.Add(getDurchmesser().ToString());
+            listView.Items.Add(item);
+        }
     }
 }

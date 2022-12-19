@@ -38,10 +38,12 @@
             // 
             // LV_figuren
             // 
+            this.LV_figuren.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.LV_figuren.HideSelection = false;
             this.LV_figuren.Location = new System.Drawing.Point(14, 60);
             this.LV_figuren.Name = "LV_figuren";
-            this.LV_figuren.Size = new System.Drawing.Size(183, 218);
+            this.LV_figuren.Size = new System.Drawing.Size(183, 301);
             this.LV_figuren.TabIndex = 2;
             this.LV_figuren.UseCompatibleStateImageBehavior = false;
             this.LV_figuren.View = System.Windows.Forms.View.List;
@@ -59,9 +61,12 @@
             // 
             // PL_formen
             // 
+            this.PL_formen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PL_formen.Location = new System.Drawing.Point(202, 60);
             this.PL_formen.Name = "PL_formen";
-            this.PL_formen.Size = new System.Drawing.Size(214, 219);
+            this.PL_formen.Size = new System.Drawing.Size(300, 300);
             this.PL_formen.TabIndex = 4;
             // 
             // LBL_figuren
@@ -75,10 +80,12 @@
             // 
             // LV_details
             // 
+            this.LV_details.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.LV_details.HideSelection = false;
-            this.LV_details.Location = new System.Drawing.Point(423, 60);
+            this.LV_details.Location = new System.Drawing.Point(508, 59);
             this.LV_details.Name = "LV_details";
-            this.LV_details.Size = new System.Drawing.Size(192, 219);
+            this.LV_details.Size = new System.Drawing.Size(229, 301);
             this.LV_details.TabIndex = 5;
             this.LV_details.UseCompatibleStateImageBehavior = false;
             this.LV_details.View = System.Windows.Forms.View.Details;
@@ -97,7 +104,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(627, 288);
+            this.ClientSize = new System.Drawing.Size(749, 373);
             this.Controls.Add(this.BTN_figurEntfernen);
             this.Controls.Add(this.LV_details);
             this.Controls.Add(this.PL_formen);

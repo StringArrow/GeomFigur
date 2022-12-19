@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
+using System.Windows.Forms;
 
 namespace WFA_GeomFigur
 {
@@ -28,6 +29,15 @@ namespace WFA_GeomFigur
         {
             radius = newRadius;
         }
+        public double getDurchmesser()
+        {
+            return radius * 2;
+        }
+        public void setDurchmesser(double newDiameter)
+        {
+            radius = newDiameter / 2;
+        }
+
         public override double getOberflaeche()
         {
             //Oberfläche einer Kugel
@@ -88,6 +98,21 @@ namespace WFA_GeomFigur
                 //Zeichnen des einzelnen Gradienten-Kreises
                 graphics.FillEllipse(gradient, circleRectangle);
             }
+        }
+        public override void showDetailsInListView(ListView listView)
+        {
+            base.showDetailsInListView(listView);
+
+            //Parameter dem AusgabeListView anfügen
+            ListViewItem item;
+
+            item = new ListViewItem("Radius");
+            item.SubItems.Add(getRadius().ToString());
+            listView.Items.Add(item);
+
+            item = new ListViewItem("Durchmesser");
+            item.SubItems.Add(getDurchmesser().ToString());
+            listView.Items.Add(item);
         }
     }
 }

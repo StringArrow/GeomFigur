@@ -35,22 +35,37 @@ namespace WFA_GeomFigur
             //Figur der Figurenliste anfügen
             figuren.Add(newFigure);
 
-            refreshDisplay();
-
-            newFigure.zeichneFigurImPanel(panel);
+            refreshFigureListView();
         }
 
         public void removeSelectedFigure()
         {
-            //Selektierte Figur ermitteln
-            CGeomFigur figur = getFigure(listView.SelectedItems[0].Index);
+            try
+            {
+                //Selektierte Figur ermitteln
+                CGeomFigur figur = getFigure(listView.SelectedItems[0].Index);
 
-            figuren.Remove(figur);
-            refreshDisplay();
-            refreshDetailsDisplay();
+                figuren.Remove(figur);
+
+                //GUI refresh
+                refreshFigureListView();
+
+                //Panel leeren
+                panel.Invalidate();
+
+                //Details entfernen
+                listViewDetails.Items.Clear();
+                listViewDetails.Columns.Clear();
+                
+            }
+            catch
+            {
+                MessageBox.Show("Bitte die zu entfernende Figur auswählen");
+            }
+
         }
 
-        public void refreshDisplay()
+        public void refreshFigureListView()
         {
             //Aktualisieren des ListViews mit der neuen Figur
             listView.BeginUpdate();
@@ -68,15 +83,20 @@ namespace WFA_GeomFigur
             listView.EndUpdate();
         }
 
-        public void refreshDetailsDisplay()
+        public void refreshDetailsDisplay(CGeomFigur figur)
         {
             listViewDetails.BeginUpdate();
 
-            foreach (var figure in figuren)
-            {
+            listViewDetails.Items.Clear();
 
-            }
+            //Spaltenüberschriften
+            listViewDetails.Columns.Clear();
 
+            listViewDetails.Columns.Add("Attribut");
+            listViewDetails.Columns.Add("Wert");
+            figur.showDetailsInListView(listViewDetails);
+            listViewDetails.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
+            listViewDetails.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
             listViewDetails.EndUpdate();
         }
 
@@ -91,9 +111,9 @@ namespace WFA_GeomFigur
                 //Selektierte Figur ermitteln
                 CGeomFigur figur = getFigure(listView.SelectedItems[0].Index);
 
+                refreshDetailsDisplay(figur);
+
                 figur.zeichneFigurImPanel(panel);
-
-
             }
         }
 

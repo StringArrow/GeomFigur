@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace WFA_GeomFigur
 {
@@ -68,6 +69,17 @@ namespace WFA_GeomFigur
 
             //Vordere Seite zum Schluss zeichnen, da diese ganz Vorne ist.
             graphics.FillRectangle(solidBrush, front);
+        }
+        public override void showDetailsInListView(ListView listView)
+        {
+            base.showDetailsInListView(listView);
+
+            //Parameter dem AusgabeListView anfügen
+            ListViewItem item;
+
+            item = new ListViewItem("Kantenlänge");
+            item.SubItems.Add(getKantenlaenge().ToString());
+            listView.Items.Add(item);
         }
     }
 }

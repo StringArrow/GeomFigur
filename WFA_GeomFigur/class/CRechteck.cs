@@ -63,5 +63,21 @@ namespace WFA_GeomFigur
         {
             graphics.FillRectangle(solidBrush, coordinates);
         }
+
+        public override void showDetailsInListView(ListView listView)
+        {
+            base.showDetailsInListView(listView);
+
+            //Parameter dem AusgabeListView anfügen
+            ListViewItem item;
+
+            item = new ListViewItem("Höhe");
+            item.SubItems.Add(getHoehe().ToString());
+            listView.Items.Add(item);
+
+            item = new ListViewItem("Breite");
+            item.SubItems.Add(getBreite().ToString());
+            listView.Items.Add(item);
+        }
     }
 }
