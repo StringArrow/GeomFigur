@@ -15,26 +15,43 @@ namespace WFA_GeomFigur
         public Form1()
         {
             InitializeComponent();
+
+            figurenHandler = new CFigurenHandler(LV_figuren, PL_formen, LV_details);
         }
 
         //Liste mit den hinzugefügten Figuren
-        private List<CGeomFigur> figuren = new List<CGeomFigur>();
+        private CFigurenHandler figurenHandler;
+
         private void BTN_figurHinzufuegen_Click(object sender, EventArgs e)
         {
-            CGeomFigur figur = new CKugel(10, Color.Green);
+            CGeomFigur figur = new CWuerfel(10, Color.Blue);
+            figur.setBezeichnung("Test");
+            figurenHandler.addFigure(figur);
 
-            figuren.Add(figur);
+            figur = new CKugel(10, Color.Blue);
+            figur.setBezeichnung("Kugel");
+            figurenHandler.addFigure(figur);
 
-            figur.zeichneFigurImPanel(PL_formen);
-            
+            figur = new CRechteck(10, 10, Color.Green);
+            figur.setBezeichnung("Rechteck");
+            figurenHandler.addFigure(figur);
+
+        }
+
+        private void BTN_figurEntfernen_Click(object sender, EventArgs e)
+        {
+            figurenHandler.removeSelectedFigure();
         }
 
         private void Form1_SizeChanged(object sender, EventArgs e)
         {
-            foreach (var figur in figuren)
-            {
-                figur.zeichneFigurImPanel(PL_formen);
-            }
         }
+
+        private void LV_figuren_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            figurenHandler.displaySelectedFigure();
+        }
+
+
     }
 }
