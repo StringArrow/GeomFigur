@@ -45,7 +45,5 @@ namespace WFA_GeomFigur
         {
             figurenHandler.displaySelectedFigure();
         }
-
-
     }
 }
