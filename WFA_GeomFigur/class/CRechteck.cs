@@ -15,11 +15,13 @@ namespace WFA_GeomFigur
         private double hoehe;
 
         //Konstruktor
-        public CRechteck(double breite, double hoehe, Color farbe)
+        public CRechteck(string bezeichnung, double breite, double hoehe, Color farbe)
         {
+            setBezeichnung(bezeichnung);
             setBreite(breite);
             setHoehe(hoehe);
             setFarbe(farbe);
+            setFigurTyp("Rechteck");
         }
 
         //Methoden

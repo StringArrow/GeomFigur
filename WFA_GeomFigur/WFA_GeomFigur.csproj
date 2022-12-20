@@ -51,6 +51,7 @@
     <Compile Include="class\CGeomFigur.cs" />
     <Compile Include="class\CKoerper.cs" />
     <Compile Include="class\CKreis.cs" />
+    <Compile Include="class\CGeomFigurCreator.cs" />
     <Compile Include="class\CQuadrat.cs" />
     <Compile Include="class\CRechteck.cs" />
     <Compile Include="class\CKugel.cs" />

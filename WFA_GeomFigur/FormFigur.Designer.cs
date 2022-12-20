@@ -28,132 +28,196 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.CB_figureType = new System.Windows.Forms.ComboBox();
             this.LBL_figureType = new System.Windows.Forms.Label();
             this.LBL_bezeichnung = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TB_bezeichnung = new System.Windows.Forms.TextBox();
             this.LBL_color = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.CB_color = new System.Windows.Forms.ComboBox();
             this.LBL_value1 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.NUD_value1 = new System.Windows.Forms.NumericUpDown();
             this.BTN_create = new System.Windows.Forms.Button();
             this.LBL_value2 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            this.NUD_value2 = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_value1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_value2)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // CB_figureType
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(12, 25);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(168, 21);
-            this.comboBox1.TabIndex = 0;
+            this.CB_figureType.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CB_figureType.FormattingEnabled = true;
+            this.CB_figureType.Items.AddRange(new object[] {
+            "Quadrat",
+            "Rechteck",
+            "Kreis",
+            "Würfel",
+            "Kugel"});
+            this.CB_figureType.Location = new System.Drawing.Point(16, 31);
+            this.CB_figureType.Margin = new System.Windows.Forms.Padding(4);
+            this.CB_figureType.Name = "CB_figureType";
+            this.CB_figureType.Size = new System.Drawing.Size(301, 24);
+            this.CB_figureType.TabIndex = 0;
+            this.CB_figureType.SelectedIndexChanged += new System.EventHandler(this.CB_figureType_SelectedIndexChanged);
             // 
             // LBL_figureType
             // 
             this.LBL_figureType.AutoSize = true;
-            this.LBL_figureType.Location = new System.Drawing.Point(12, 9);
+            this.LBL_figureType.Location = new System.Drawing.Point(16, 11);
+            this.LBL_figureType.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LBL_figureType.Name = "LBL_figureType";
-            this.LBL_figureType.Size = new System.Drawing.Size(25, 13);
+            this.LBL_figureType.Size = new System.Drawing.Size(31, 16);
             this.LBL_figureType.TabIndex = 1;
             this.LBL_figureType.Text = "Typ";
             // 
             // LBL_bezeichnung
             // 
             this.LBL_bezeichnung.AutoSize = true;
-            this.LBL_bezeichnung.Location = new System.Drawing.Point(12, 49);
+            this.LBL_bezeichnung.Location = new System.Drawing.Point(16, 60);
+            this.LBL_bezeichnung.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LBL_bezeichnung.Name = "LBL_bezeichnung";
-            this.LBL_bezeichnung.Size = new System.Drawing.Size(69, 13);
+            this.LBL_bezeichnung.Size = new System.Drawing.Size(84, 16);
             this.LBL_bezeichnung.TabIndex = 2;
             this.LBL_bezeichnung.Text = "Bezeichnung";
             // 
-            // textBox1
+            // TB_bezeichnung
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 65);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(168, 20);
-            this.textBox1.TabIndex = 3;
+            this.TB_bezeichnung.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TB_bezeichnung.Location = new System.Drawing.Point(16, 80);
+            this.TB_bezeichnung.Margin = new System.Windows.Forms.Padding(4);
+            this.TB_bezeichnung.Name = "TB_bezeichnung";
+            this.TB_bezeichnung.Size = new System.Drawing.Size(301, 22);
+            this.TB_bezeichnung.TabIndex = 1;
             // 
             // LBL_color
             // 
             this.LBL_color.AutoSize = true;
-            this.LBL_color.Location = new System.Drawing.Point(12, 88);
+            this.LBL_color.Location = new System.Drawing.Point(16, 108);
+            this.LBL_color.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LBL_color.Name = "LBL_color";
-            this.LBL_color.Size = new System.Drawing.Size(34, 13);
+            this.LBL_color.Size = new System.Drawing.Size(43, 16);
             this.LBL_color.TabIndex = 4;
             this.LBL_color.Text = "Farbe";
             // 
-            // comboBox2
+            // CB_color
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(12, 104);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(168, 21);
-            this.comboBox2.TabIndex = 5;
+            this.CB_color.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CB_color.FormattingEnabled = true;
+            this.CB_color.Location = new System.Drawing.Point(16, 128);
+            this.CB_color.Margin = new System.Windows.Forms.Padding(4);
+            this.CB_color.Name = "CB_color";
+            this.CB_color.Size = new System.Drawing.Size(301, 24);
+            this.CB_color.TabIndex = 2;
             // 
             // LBL_value1
             // 
             this.LBL_value1.AutoSize = true;
-            this.LBL_value1.Location = new System.Drawing.Point(12, 128);
+            this.LBL_value1.Location = new System.Drawing.Point(16, 158);
+            this.LBL_value1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LBL_value1.Name = "LBL_value1";
-            this.LBL_value1.Size = new System.Drawing.Size(41, 13);
+            this.LBL_value1.Size = new System.Drawing.Size(50, 16);
             this.LBL_value1.TabIndex = 6;
             this.LBL_value1.Text = "Seite A";
             // 
-            // numericUpDown1
+            // NUD_value1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(12, 144);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(168, 20);
-            this.numericUpDown1.TabIndex = 7;
+            this.NUD_value1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.NUD_value1.Location = new System.Drawing.Point(16, 177);
+            this.NUD_value1.Margin = new System.Windows.Forms.Padding(4);
+            this.NUD_value1.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.NUD_value1.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.NUD_value1.Name = "NUD_value1";
+            this.NUD_value1.Size = new System.Drawing.Size(302, 22);
+            this.NUD_value1.TabIndex = 3;
+            this.NUD_value1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // BTN_create
             // 
-            this.BTN_create.Location = new System.Drawing.Point(105, 209);
+            this.BTN_create.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BTN_create.Location = new System.Drawing.Point(218, 251);
+            this.BTN_create.Margin = new System.Windows.Forms.Padding(4);
             this.BTN_create.Name = "BTN_create";
-            this.BTN_create.Size = new System.Drawing.Size(75, 23);
+            this.BTN_create.Size = new System.Drawing.Size(100, 28);
             this.BTN_create.TabIndex = 8;
             this.BTN_create.Text = "Anlegen";
             this.BTN_create.UseVisualStyleBackColor = true;
+            this.BTN_create.Click += new System.EventHandler(this.BTN_create_Click);
             // 
             // LBL_value2
             // 
             this.LBL_value2.AutoSize = true;
-            this.LBL_value2.Location = new System.Drawing.Point(12, 167);
+            this.LBL_value2.Location = new System.Drawing.Point(16, 206);
+            this.LBL_value2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LBL_value2.Name = "LBL_value2";
-            this.LBL_value2.Size = new System.Drawing.Size(41, 13);
+            this.LBL_value2.Size = new System.Drawing.Size(50, 16);
             this.LBL_value2.TabIndex = 9;
             this.LBL_value2.Text = "Seite B";
             // 
-            // numericUpDown2
+            // NUD_value2
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(12, 183);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(168, 20);
-            this.numericUpDown2.TabIndex = 10;
+            this.NUD_value2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.NUD_value2.Location = new System.Drawing.Point(16, 225);
+            this.NUD_value2.Margin = new System.Windows.Forms.Padding(4);
+            this.NUD_value2.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.NUD_value2.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.NUD_value2.Name = "NUD_value2";
+            this.NUD_value2.Size = new System.Drawing.Size(302, 22);
+            this.NUD_value2.TabIndex = 4;
+            this.NUD_value2.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // FormFigur
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(192, 241);
-            this.Controls.Add(this.numericUpDown2);
+            this.ClientSize = new System.Drawing.Size(334, 291);
+            this.Controls.Add(this.NUD_value2);
             this.Controls.Add(this.LBL_value2);
             this.Controls.Add(this.BTN_create);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.NUD_value1);
             this.Controls.Add(this.LBL_value1);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.CB_color);
             this.Controls.Add(this.LBL_color);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TB_bezeichnung);
             this.Controls.Add(this.LBL_bezeichnung);
             this.Controls.Add(this.LBL_figureType);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.CB_figureType);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximumSize = new System.Drawing.Size(350, 330);
+            this.MinimumSize = new System.Drawing.Size(350, 330);
             this.Name = "FormFigur";
-            this.Text = "FormFigur";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Neue Figur";
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_value1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_value2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,16 +225,16 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox CB_figureType;
         private System.Windows.Forms.Label LBL_figureType;
         private System.Windows.Forms.Label LBL_bezeichnung;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TB_bezeichnung;
         private System.Windows.Forms.Label LBL_color;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox CB_color;
         private System.Windows.Forms.Label LBL_value1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown NUD_value1;
         private System.Windows.Forms.Button BTN_create;
         private System.Windows.Forms.Label LBL_value2;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown NUD_value2;
     }
 }

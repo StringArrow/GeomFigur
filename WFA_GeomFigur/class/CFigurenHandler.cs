@@ -32,6 +32,8 @@ namespace WFA_GeomFigur
 
         public void addFigure(CGeomFigur newFigure)
         {
+            if (newFigure == null) throw new Exception("Figur darf nicht null sein.");
+
             //Figur der Figurenliste anfügen
             figuren.Add(newFigure);
 
@@ -73,7 +75,6 @@ namespace WFA_GeomFigur
             listView.Items.Clear();
             foreach (var figure in figuren)
             {
-
                 ListViewItem item = new ListViewItem();
                 item.Text = figure.getBezeichnung();
 

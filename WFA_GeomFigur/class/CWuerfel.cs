@@ -14,10 +14,12 @@ namespace WFA_GeomFigur
         private double kantenlaenge;
 
         //Konstruktor
-        public CWuerfel(double kantenlaenge, Color farbe)
+        public CWuerfel(string bezeichnung, double kantenlaenge, Color farbe)
         {
+            setBezeichnung(bezeichnung);
             setKantenlaenge(kantenlaenge);
             setFarbe(farbe);
+            setFigurTyp("Würfel");
         }
 
         //Getter und Setter

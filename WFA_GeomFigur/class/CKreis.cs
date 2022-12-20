@@ -14,10 +14,12 @@ namespace WFA_GeomFigur
         private double radius;
 
         //Konstruktor
-        public CKreis(double radius, Color farbe)
+        public CKreis(string bezeichnung, double radius, Color farbe)
         {
+            setBezeichnung(bezeichnung);
             setRadius(radius);
             setFarbe(farbe);
+            setFigurTyp("Kreis");
         }
 
         //Methoden

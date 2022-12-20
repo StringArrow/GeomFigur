@@ -14,10 +14,12 @@ namespace WFA_GeomFigur
         private double radius;
 
         //Konstruktor
-        public CKugel(double radius, Color farbe)
+        public CKugel(string bezeichnung, double radius, Color farbe)
         {
+            setBezeichnung(bezeichnung);
             setRadius(radius);
             setFarbe(farbe);
+            setFigurTyp("Kugel");
         }
 
         //Getter und Setter
@@ -76,8 +78,8 @@ namespace WFA_GeomFigur
             for (int i = 0; i < ANZAHLGRADIENTEN; i++)
             {
                 //Koordinaten des nächsten Kreises
-                x = x + circleRectangle.Width / 110;
-                y = y + circleRectangle.Height / 110;
+                x = x + circleRectangle.Width / 90;
+                y = y + circleRectangle.Height / 90;
                 circleRectangle.X = Convert.ToInt32(x);
                 circleRectangle.Y = Convert.ToInt32(y);
                 circleRectangle.Width = Convert.ToInt32(circleRectangle.Width * ABDUNKELNMULTIPLIKATOR);

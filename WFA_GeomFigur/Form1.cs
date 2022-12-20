@@ -24,11 +24,13 @@ namespace WFA_GeomFigur
 
         private void BTN_figurHinzufuegen_Click(object sender, EventArgs e)
         {
-
-
-            CGeomFigur figur = new CWuerfel(10, Color.Blue);
-            figur.setBezeichnung("Test");
-            figurenHandler.addFigure(figur);
+            //Dialogfenster öffnen, damit der User die Parameter eingeben kann
+            FormFigur formNeueFigur = new FormFigur();
+            DialogResult resultNeueFigur = formNeueFigur.ShowDialog();
+            if (resultNeueFigur == DialogResult.OK )
+            {
+                figurenHandler.addFigure(formNeueFigur.NeueFigur);
+            }
         }
 
         private void BTN_figurEntfernen_Click(object sender, EventArgs e)
