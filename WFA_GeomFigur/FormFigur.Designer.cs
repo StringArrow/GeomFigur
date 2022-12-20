@@ -145,7 +145,7 @@
             this.BTN_create.Margin = new System.Windows.Forms.Padding(4);
             this.BTN_create.Name = "BTN_create";
             this.BTN_create.Size = new System.Drawing.Size(100, 28);
-            this.BTN_create.TabIndex = 8;
+            this.BTN_create.TabIndex = 5;
             this.BTN_create.Text = "Anlegen";
             this.BTN_create.UseVisualStyleBackColor = true;
             this.BTN_create.Click += new System.EventHandler(this.BTN_create_Click);
@@ -190,7 +190,7 @@
             this.BTN_color.Location = new System.Drawing.Point(12, 127);
             this.BTN_color.Name = "BTN_color";
             this.BTN_color.Size = new System.Drawing.Size(132, 28);
-            this.BTN_color.TabIndex = 10;
+            this.BTN_color.TabIndex = 2;
             this.BTN_color.Text = "Farbe auswählen";
             this.BTN_color.UseVisualStyleBackColor = true;
             this.BTN_color.Click += new System.EventHandler(this.BTN_color_Click);

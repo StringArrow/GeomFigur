@@ -57,9 +57,9 @@
     </TypeIdentifier>
   </Class>
   <Class Name="WFA_GeomFigur.Form1">
-    <Position X="11.25" Y="0.5" Width="2" />
+    <Position X="13" Y="0.5" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAEAAAAgDAAAAgAAADAAAACAABAIAAAAAIAAEkAAAA=</HashCode>
+      <HashCode>AAAEEABAgDAAAAgAQACAAAAiAABAIQAAASIAAEkAAAA=</HashCode>
       <FileName>Form1.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -71,7 +71,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="WFA_GeomFigur.Properties.Resources">
-    <Position X="13.75" Y="0.5" Width="2.25" />
+    <Position X="10.5" Y="0.5" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
     </TypeIdentifier>
@@ -100,7 +100,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="WFA_GeomFigur.CFigurenHandler">
-    <Position X="13.75" Y="3.25" Width="3.5" />
+    <Position X="14" Y="6.5" Width="3.5" />
     <TypeIdentifier>
       <HashCode>AAAEIAAAABAAAAAAAAgAQAABIAAAAAAAAAAQA4AAAAA=</HashCode>
       <FileName>class\CFigurenHandler.cs</FileName>

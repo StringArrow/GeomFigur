@@ -22,6 +22,9 @@ namespace WFA_GeomFigur
             NUD_value1.Maximum = Decimal.MaxValue;
             NUD_value2.Maximum = Decimal.MaxValue;
 
+            //Farbe initialisieren
+            BTN_colorDummy.BackColor = Color.DarkCyan;
+
             //Initial das erste Element anzeigen
             this.CB_figureType.SelectedIndex = 0;
         }
@@ -34,7 +37,7 @@ namespace WFA_GeomFigur
                 //Erstelle neue Figur
                 this.NeueFigur = CGeomFigurCreator.Factory(CB_figureType.SelectedItem.ToString(),
                                                            TB_bezeichnung.Text,
-                                                           colorDialog.Color,
+                                                           BTN_colorDummy.BackColor,
                                                            (double)NUD_value1.Value,
                                                            (double)NUD_value2.Value);
 
