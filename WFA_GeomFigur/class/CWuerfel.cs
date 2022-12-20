@@ -39,7 +39,6 @@ namespace WFA_GeomFigur
         {
             return Math.Pow(kantenlaenge, 3);
         }
-
         public override void zeichneFigur(Graphics graphics, SolidBrush solidBrush, Rectangle coordinates)
         {
             //Lord forgive me for what I am about to code ✝

@@ -41,12 +41,17 @@ namespace WFA_GeomFigur
 
         private void Form1_SizeChanged(object sender, EventArgs e)
         {
-            figurenHandler.displaySelectedFigure();
+            if (figurenHandler != null) figurenHandler.displaySelectedFigure();
         }
 
         private void LV_figuren_SelectedIndexChanged(object sender, EventArgs e)
         {
             figurenHandler.displaySelectedFigure();
+        }
+
+        private void splitContainer_Panel1_Resize(object sender, EventArgs e)
+        {
+            if (figurenHandler != null) figurenHandler.displaySelectedFigure();
         }
     }
 }
