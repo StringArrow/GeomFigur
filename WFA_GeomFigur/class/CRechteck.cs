@@ -17,11 +17,11 @@ namespace WFA_GeomFigur
         //Konstruktor
         public CRechteck(string bezeichnung, double breite, double hoehe, Color farbe)
         {
+            setFigurTyp("Rechteck");
             setBezeichnung(bezeichnung);
             setBreite(breite);
             setHoehe(hoehe);
             setFarbe(farbe);
-            setFigurTyp("Rechteck");
         }
 
         //Methoden

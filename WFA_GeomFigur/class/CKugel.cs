@@ -16,10 +16,10 @@ namespace WFA_GeomFigur
         //Konstruktor
         public CKugel(string bezeichnung, double radius, Color farbe)
         {
+            setFigurTyp("Kugel");
             setBezeichnung(bezeichnung);
             setRadius(radius);
             setFarbe(farbe);
-            setFigurTyp("Kugel");
         }
 
         //Getter und Setter

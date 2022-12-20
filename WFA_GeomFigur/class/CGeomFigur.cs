@@ -33,7 +33,7 @@ namespace WFA_GeomFigur
         {
             if (string.IsNullOrEmpty(newBezeichnung))
             {
-                bezeichnung = "Unbenannte Figur";
+                bezeichnung = getFigurTyp();
             }
             else
             {

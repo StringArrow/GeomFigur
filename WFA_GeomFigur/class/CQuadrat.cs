@@ -16,10 +16,10 @@ namespace WFA_GeomFigur
         //Konstruktor
         public CQuadrat(string bezeichnung, double seitenlaenge, Color farbe)
         {
+            setFigurTyp("Quadrat");
             setBezeichnung(bezeichnung);
             setSeitenlaenge(seitenlaenge);
             setFarbe(farbe);
-            setFigurTyp("Quadrat");
         }
 
         //Methoden
