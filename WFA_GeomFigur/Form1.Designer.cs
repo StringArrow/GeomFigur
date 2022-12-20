@@ -54,7 +54,7 @@
             this.LV_figuren.Location = new System.Drawing.Point(7, 58);
             this.LV_figuren.Margin = new System.Windows.Forms.Padding(4);
             this.LV_figuren.Name = "LV_figuren";
-            this.LV_figuren.Size = new System.Drawing.Size(232, 370);
+            this.LV_figuren.Size = new System.Drawing.Size(232, 315);
             this.LV_figuren.TabIndex = 2;
             this.LV_figuren.UseCompatibleStateImageBehavior = false;
             this.LV_figuren.View = System.Windows.Forms.View.List;
@@ -79,7 +79,7 @@
             this.PL_formen.Location = new System.Drawing.Point(7, 22);
             this.PL_formen.Margin = new System.Windows.Forms.Padding(4);
             this.PL_formen.Name = "PL_formen";
-            this.PL_formen.Size = new System.Drawing.Size(454, 399);
+            this.PL_formen.Size = new System.Drawing.Size(327, 347);
             this.PL_formen.TabIndex = 4;
             // 
             // LV_details
@@ -91,7 +91,7 @@
             this.LV_details.Location = new System.Drawing.Point(7, 22);
             this.LV_details.Margin = new System.Windows.Forms.Padding(4);
             this.LV_details.Name = "LV_details";
-            this.LV_details.Size = new System.Drawing.Size(221, 399);
+            this.LV_details.Size = new System.Drawing.Size(301, 347);
             this.LV_details.TabIndex = 5;
             this.LV_details.UseCompatibleStateImageBehavior = false;
             this.LV_details.View = System.Windows.Forms.View.Details;
@@ -123,8 +123,8 @@
             // splitContainer.Panel2
             // 
             this.splitContainer.Panel2.Controls.Add(this.groupBox3);
-            this.splitContainer.Size = new System.Drawing.Size(719, 438);
-            this.splitContainer.SplitterDistance = 474;
+            this.splitContainer.Size = new System.Drawing.Size(672, 386);
+            this.splitContainer.SplitterDistance = 347;
             this.splitContainer.TabIndex = 7;
             // 
             // groupBox1
@@ -136,7 +136,7 @@
             this.groupBox1.Controls.Add(this.BTN_figurHinzufuegen);
             this.groupBox1.Location = new System.Drawing.Point(19, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(246, 435);
+            this.groupBox1.Size = new System.Drawing.Size(246, 380);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "1. Figur erstellen und auswählen";
@@ -149,7 +149,7 @@
             this.groupBox2.Controls.Add(this.PL_formen);
             this.groupBox2.Location = new System.Drawing.Point(3, 6);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(468, 428);
+            this.groupBox2.Size = new System.Drawing.Size(341, 376);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "2. Vorschau";
@@ -162,7 +162,7 @@
             this.groupBox3.Controls.Add(this.LV_details);
             this.groupBox3.Location = new System.Drawing.Point(3, 6);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(235, 428);
+            this.groupBox3.Size = new System.Drawing.Size(315, 376);
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "3. Parameter";
@@ -171,10 +171,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(999, 459);
+            this.ClientSize = new System.Drawing.Size(952, 404);
             this.Controls.Add(this.splitContainer);
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MinimumSize = new System.Drawing.Size(611, 237);
             this.Name = "Form1";
             this.Text = "Geometrische Figuren";
             this.SizeChanged += new System.EventHandler(this.Form1_SizeChanged);
