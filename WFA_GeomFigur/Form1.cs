@@ -16,6 +16,7 @@ namespace WFA_GeomFigur
         {
             InitializeComponent();
 
+            //dieses Objekt kümmert sich um alle Ausgabeelemente, die mit den Fiuren zu tun haben
             figurenHandler = new CFigurenHandler(LV_figuren, PL_formen, LV_details);
         }
 

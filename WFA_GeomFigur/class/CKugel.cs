@@ -101,9 +101,9 @@ namespace WFA_GeomFigur
                 graphics.FillEllipse(gradient, circleRectangle);
             }
         }
-        public override void showDetailsInListView(ListView listView)
+        public override void appendDetailsInListViewItems(ListView listView)
         {
-            base.showDetailsInListView(listView);
+            base.appendDetailsInListViewItems(listView);
 
             //Parameter dem AusgabeListView anfügen
             ListViewItem item;

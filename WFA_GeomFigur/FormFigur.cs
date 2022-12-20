@@ -34,7 +34,7 @@ namespace WFA_GeomFigur
                 //Erstelle neue Figur
                 this.NeueFigur = CGeomFigurCreator.Factory(CB_figureType.SelectedItem.ToString(),
                                                            TB_bezeichnung.Text,
-                                                           Color.Blue,
+                                                           colorDialog.Color,
                                                            (double)NUD_value1.Value,
                                                            (double)NUD_value2.Value);
 
@@ -78,6 +78,15 @@ namespace WFA_GeomFigur
                 this.LBL_value2.Text = CGeomFigurCreator.getParameterName(figureType, 2);
                 this.LBL_value2.Visible = true;
                 this.NUD_value2.Visible = true;
+            }
+        }
+
+        private void BTN_color_Click(object sender, EventArgs e)
+        {
+            DialogResult resultColorDialog = this.colorDialog.ShowDialog();
+            if (resultColorDialog == DialogResult.OK)
+            {
+                BTN_colorDummy.BackColor = colorDialog.Color;
             }
         }
     }

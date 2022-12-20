@@ -95,7 +95,7 @@ namespace WFA_GeomFigur
 
             listViewDetails.Columns.Add("Attribut");
             listViewDetails.Columns.Add("Wert");
-            figur.showDetailsInListView(listViewDetails);
+            figur.appendDetailsInListViewItems(listViewDetails);
             listViewDetails.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
             listViewDetails.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
             listViewDetails.EndUpdate();

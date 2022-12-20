@@ -72,9 +72,9 @@ namespace WFA_GeomFigur
             //Vordere Seite zum Schluss zeichnen, da diese ganz Vorne ist.
             graphics.FillRectangle(solidBrush, front);
         }
-        public override void showDetailsInListView(ListView listView)
+        public override void appendDetailsInListViewItems(ListView listView)
         {
-            base.showDetailsInListView(listView);
+            base.appendDetailsInListViewItems(listView);
 
             //Parameter dem AusgabeListView anfügen
             ListViewItem item;

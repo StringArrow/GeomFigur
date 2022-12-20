@@ -9,7 +9,7 @@ namespace WFA_GeomFigur
 {
     internal class CGeomFigurCreator
     {
-        public enum Figur
+        public enum EnumFigur
         {
             Kreis,
             Kugel,
@@ -18,25 +18,25 @@ namespace WFA_GeomFigur
             Wuerfel
         }
 
-        public static int getCountOfNeededValues(Figur typ)
+        public static int getCountOfNeededValues(EnumFigur typ)
         {
             int count = 0;
 
             switch (typ)
             {
-                case Figur.Kreis:
+                case EnumFigur.Kreis:
                     count = 1;
                     break;
-                case Figur.Kugel:
+                case EnumFigur.Kugel:
                     count = 1;
                     break;
-                case Figur.Quadrat:
+                case EnumFigur.Quadrat:
                     count = 1;
                     break;
-                case Figur.Rechteck:
+                case EnumFigur.Rechteck:
                     count = 2;
                     break;
-                case Figur.Wuerfel:
+                case EnumFigur.Wuerfel:
                     count = 1;
                     break;
                 default:
@@ -50,7 +50,7 @@ namespace WFA_GeomFigur
             return getCountOfNeededValues(convertStringToEnum(typ));
         }
 
-        public static CGeomFigur Factory(Figur typ, string bezeichnung, Color color, double value1, double value2)
+        public static CGeomFigur Factory(EnumFigur typ, string bezeichnung, Color color, double value1, double value2)
         {
             CGeomFigur createdFigur;
 
@@ -61,23 +61,23 @@ namespace WFA_GeomFigur
 
             switch (typ)
             {
-                case Figur.Quadrat:
+                case EnumFigur.Quadrat:
                     createdFigur = new CQuadrat(bezeichnung, value1, color);
                     break;
-                case Figur.Rechteck:
+                case EnumFigur.Rechteck:
                     if (value2 <= 0)
                     {
                         throw new ArgumentOutOfRangeException(getParameterName(typ, 2), "Der zweite angegebene Wert muss größer als 0 sein.");
                     }
                     createdFigur = new CRechteck(bezeichnung, value1, value2, color);
                     break;
-                case Figur.Kreis:
+                case EnumFigur.Kreis:
                     createdFigur = new CKreis(bezeichnung, value1, color);
                     break;
-                case Figur.Wuerfel:
+                case EnumFigur.Wuerfel:
                     createdFigur = new CWuerfel(bezeichnung, value1, color);
                     break;
-                case Figur.Kugel:
+                case EnumFigur.Kugel:
                     createdFigur = new CKugel(bezeichnung, value1, color);
                     break;
                 default:
@@ -91,28 +91,29 @@ namespace WFA_GeomFigur
             //Methode aufrufen, mit konvertierten Typen
             return Factory(convertStringToEnum(typ), bezeichnung, color, value1, value2);
         }
-        public static Figur convertStringToEnum(string typ)
+        
+        public static EnumFigur convertStringToEnum(string typ)
         {
             //Figur Typ von String in Enumerator konvertieren
             switch (typ)
             {
                 case "Quadrat":
-                    return Figur.Quadrat;
+                    return EnumFigur.Quadrat;
                 case "Rechteck":
-                    return Figur.Rechteck;
+                    return EnumFigur.Rechteck;
                 case "Kreis":
-                    return Figur.Kreis;
+                    return EnumFigur.Kreis;
                 case "Wuerfel":
                 case "Würfel":
-                    return Figur.Wuerfel;
+                    return EnumFigur.Wuerfel;
                 case "Kugel":
-                    return Figur.Kugel;
+                    return EnumFigur.Kugel;
                 default:
                     throw new ArgumentException("Die angegebene Figur steht nicht zur Auswahl", "typ");
             }
         }
-
-        public static string getParameterName(Figur typ, int parameterNumber)
+        
+        public static string getParameterName(EnumFigur typ, int parameterNumber)
         {
             //Parameternamen für Label auflösen
 
@@ -120,15 +121,15 @@ namespace WFA_GeomFigur
             {
                 switch (typ)
                 {
-                    case Figur.Kreis:
+                    case EnumFigur.Kreis:
                         return "Radius:";
-                    case Figur.Kugel:
+                    case EnumFigur.Kugel:
                         return "Radius:";
-                    case Figur.Quadrat:
+                    case EnumFigur.Quadrat:
                         return "Seitenlänge:";
-                    case Figur.Rechteck:
+                    case EnumFigur.Rechteck:
                         return "Seitenlänge 1:";
-                    case Figur.Wuerfel:
+                    case EnumFigur.Wuerfel:
                         return "Seitenlänge";
                     default:
                         throw new ArgumentException("Die Figur hat einen ungültigen Typ", "typ");
@@ -138,7 +139,7 @@ namespace WFA_GeomFigur
             {
                 switch (typ)
                 {
-                    case Figur.Rechteck:
+                    case EnumFigur.Rechteck:
                         return "Seitenlänge 2:";
                     default:
                         throw new ArgumentException("Die Figur hat einen ungültigen Typ", "typ");

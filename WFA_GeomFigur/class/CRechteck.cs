@@ -47,7 +47,7 @@ namespace WFA_GeomFigur
         }
         public override double getUmfang()
         {
-            return breite * hoehe * 2;
+            return breite * 2 + hoehe * 2;
         }
         public override Rectangle berechneMaxFigurGroesse(Panel panel)
         {
@@ -66,9 +66,9 @@ namespace WFA_GeomFigur
             graphics.FillRectangle(solidBrush, coordinates);
         }
 
-        public override void showDetailsInListView(ListView listView)
+        public override void appendDetailsInListViewItems(ListView listView)
         {
-            base.showDetailsInListView(listView);
+            base.appendDetailsInListViewItems(listView);
 
             //Parameter dem AusgabeListView anfügen
             ListViewItem item;

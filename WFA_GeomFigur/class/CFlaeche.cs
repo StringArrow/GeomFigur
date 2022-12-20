@@ -20,9 +20,9 @@ namespace WFA_GeomFigur
             //Methode soll von Spezialisierungen implementiert werden
             throw new NotImplementedException();
         }
-        public override void showDetailsInListView(ListView listView)
+        public override void appendDetailsInListViewItems(ListView listView)
         {
-            base.showDetailsInListView(listView);
+            base.appendDetailsInListViewItems(listView);
 
             //Parameter dem AusgabeListView anfügen
             ListViewItem item;

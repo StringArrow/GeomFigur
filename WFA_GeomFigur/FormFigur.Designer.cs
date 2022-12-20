@@ -33,12 +33,14 @@
             this.LBL_bezeichnung = new System.Windows.Forms.Label();
             this.TB_bezeichnung = new System.Windows.Forms.TextBox();
             this.LBL_color = new System.Windows.Forms.Label();
-            this.CB_color = new System.Windows.Forms.ComboBox();
             this.LBL_value1 = new System.Windows.Forms.Label();
             this.NUD_value1 = new System.Windows.Forms.NumericUpDown();
             this.BTN_create = new System.Windows.Forms.Button();
             this.LBL_value2 = new System.Windows.Forms.Label();
             this.NUD_value2 = new System.Windows.Forms.NumericUpDown();
+            this.colorDialog = new System.Windows.Forms.ColorDialog();
+            this.BTN_color = new System.Windows.Forms.Button();
+            this.BTN_colorDummy = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_value1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_value2)).BeginInit();
             this.SuspendLayout();
@@ -100,17 +102,6 @@
             this.LBL_color.Size = new System.Drawing.Size(43, 16);
             this.LBL_color.TabIndex = 4;
             this.LBL_color.Text = "Farbe";
-            // 
-            // CB_color
-            // 
-            this.CB_color.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CB_color.FormattingEnabled = true;
-            this.CB_color.Location = new System.Drawing.Point(16, 128);
-            this.CB_color.Margin = new System.Windows.Forms.Padding(4);
-            this.CB_color.Name = "CB_color";
-            this.CB_color.Size = new System.Drawing.Size(301, 24);
-            this.CB_color.TabIndex = 2;
             // 
             // LBL_value1
             // 
@@ -194,17 +185,38 @@
             0,
             0});
             // 
+            // BTN_color
+            // 
+            this.BTN_color.Location = new System.Drawing.Point(12, 127);
+            this.BTN_color.Name = "BTN_color";
+            this.BTN_color.Size = new System.Drawing.Size(132, 28);
+            this.BTN_color.TabIndex = 10;
+            this.BTN_color.Text = "Farbe auswählen";
+            this.BTN_color.UseVisualStyleBackColor = true;
+            this.BTN_color.Click += new System.EventHandler(this.BTN_color_Click);
+            // 
+            // BTN_colorDummy
+            // 
+            this.BTN_colorDummy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BTN_colorDummy.Enabled = false;
+            this.BTN_colorDummy.Location = new System.Drawing.Point(150, 127);
+            this.BTN_colorDummy.Name = "BTN_colorDummy";
+            this.BTN_colorDummy.Size = new System.Drawing.Size(167, 28);
+            this.BTN_colorDummy.TabIndex = 11;
+            this.BTN_colorDummy.UseVisualStyleBackColor = true;
+            // 
             // FormFigur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(334, 291);
+            this.Controls.Add(this.BTN_colorDummy);
+            this.Controls.Add(this.BTN_color);
             this.Controls.Add(this.NUD_value2);
             this.Controls.Add(this.LBL_value2);
             this.Controls.Add(this.BTN_create);
             this.Controls.Add(this.NUD_value1);
             this.Controls.Add(this.LBL_value1);
-            this.Controls.Add(this.CB_color);
             this.Controls.Add(this.LBL_color);
             this.Controls.Add(this.TB_bezeichnung);
             this.Controls.Add(this.LBL_bezeichnung);
@@ -230,11 +242,13 @@
         private System.Windows.Forms.Label LBL_bezeichnung;
         private System.Windows.Forms.TextBox TB_bezeichnung;
         private System.Windows.Forms.Label LBL_color;
-        private System.Windows.Forms.ComboBox CB_color;
         private System.Windows.Forms.Label LBL_value1;
         private System.Windows.Forms.NumericUpDown NUD_value1;
         private System.Windows.Forms.Button BTN_create;
         private System.Windows.Forms.Label LBL_value2;
         private System.Windows.Forms.NumericUpDown NUD_value2;
+        private System.Windows.Forms.ColorDialog colorDialog;
+        private System.Windows.Forms.Button BTN_color;
+        private System.Windows.Forms.Button BTN_colorDummy;
     }
 }

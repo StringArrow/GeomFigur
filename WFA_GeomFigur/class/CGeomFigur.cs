@@ -101,7 +101,7 @@ namespace WFA_GeomFigur
             throw new NotImplementedException();
         }
 
-        public virtual void showDetailsInListView(ListView listView)
+        public virtual void appendDetailsInListViewItems(ListView listView)
         {
             //Parameter dem AusgabeListView anfügen
             ListViewItem item;
