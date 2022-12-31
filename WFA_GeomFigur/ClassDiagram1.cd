@@ -15,7 +15,15 @@
     </TypeIdentifier>
   </Class>
   <Class Name="WFA_GeomFigur.CKoerper">
-    <Position X="9.75" Y="5" Width="2.25" />
+    <Position X="9.25" Y="5" Width="2.25" />
+    <InheritanceLine Type="WFA_GeomFigur.CGeomFigur" FixedToPoint="true">
+      <Path>
+        <Point X="4.125" Y="4.17" />
+        <Point X="4.125" Y="4.625" />
+        <Point X="10.312" Y="4.625" />
+        <Point X="10.312" Y="5" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAABAAAAAAQAAAAAAA=</HashCode>
       <FileName>class\CKoerper.cs</FileName>
@@ -29,7 +37,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="WFA_GeomFigur.CKugel">
-    <Position X="8.25" Y="7.75" Width="2.25" />
+    <Position X="8" Y="7.75" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAIAACAAAAAAIAAAAAAAAAAAABAAACIAQAAiAAAA=</HashCode>
       <FileName>class\CKugel.cs</FileName>
@@ -50,34 +58,34 @@
     </TypeIdentifier>
   </Class>
   <Class Name="WFA_GeomFigur.CWuerfel">
-    <Position X="11.5" Y="7.75" Width="2.25" />
+    <Position X="10.5" Y="7.75" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AACAAIAIAAAAAAAIAAAACAAAAAAABAAAAAAQAAAAAAA=</HashCode>
       <FileName>class\CWuerfel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="WFA_GeomFigur.Form1">
-    <Position X="13" Y="0.5" Width="2.5" />
+    <Position X="0.5" Y="0.5" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAEEABAgDAAAAgAQACAAAAiAABAIQAAASIAAEkAAAA=</HashCode>
       <FileName>Form1.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="WFA_GeomFigur.Program">
-    <Position X="0.5" Y="0.5" Width="2" />
+    <Position X="10.5" Y="0.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="WFA_GeomFigur.Properties.Resources">
-    <Position X="10.5" Y="0.5" Width="2.25" />
+    <Position X="4.75" Y="11.5" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Class Name="WFA_GeomFigur.Properties.Settings">
-    <Position X="0.5" Y="2" Width="2" />
+    <Position X="6.25" Y="5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
     </TypeIdentifier>
@@ -100,7 +108,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="WFA_GeomFigur.CFigurenHandler">
-    <Position X="14" Y="6.5" Width="3.5" />
+    <Position X="0.75" Y="11.75" Width="3.5" />
     <TypeIdentifier>
       <HashCode>AAAEIAAAABAAAAAAAAgAQAABIAAAAAAAAAAQA4AAAAA=</HashCode>
       <FileName>class\CFigurenHandler.cs</FileName>
