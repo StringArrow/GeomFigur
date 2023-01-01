@@ -15,8 +15,10 @@ namespace WFA_GeomFigur
         private double hoehe;
 
         //Konstruktor
-        public CRechteck(double breite, double hoehe, Color farbe)
+        public CRechteck(string bezeichnung, double breite, double hoehe, Color farbe)
         {
+            setFigurTyp("Rechteck");
+            setBezeichnung(bezeichnung);
             setBreite(breite);
             setHoehe(hoehe);
             setFarbe(farbe);
@@ -45,7 +47,7 @@ namespace WFA_GeomFigur
         }
         public override double getUmfang()
         {
-            return breite * hoehe * 2;
+            return breite * 2 + hoehe * 2;
         }
         public override Rectangle berechneMaxFigurGroesse(Panel panel)
         {
@@ -62,6 +64,22 @@ namespace WFA_GeomFigur
         public override void zeichneFigur(Graphics graphics, SolidBrush solidBrush, Rectangle coordinates)
         {
             graphics.FillRectangle(solidBrush, coordinates);
+        }
+
+        public override void appendDetailsInListViewItems(ListView listView)
+        {
+            base.appendDetailsInListViewItems(listView);
+
+            //Parameter dem AusgabeListView anfügen
+            ListViewItem item;
+
+            item = new ListViewItem("Höhe");
+            item.SubItems.Add(getHoehe().ToString());
+            listView.Items.Add(item);
+
+            item = new ListViewItem("Breite");
+            item.SubItems.Add(getBreite().ToString());
+            listView.Items.Add(item);
         }
     }
 }

@@ -8,11 +8,13 @@ using System.Windows.Forms;
 
 namespace WFA_GeomFigur
 {
-    internal abstract class CGeomFigur
+    public abstract class CGeomFigur
     {
+
         //Attribute
         private Color farbe;
         private string bezeichnung;
+        private string figurTyp;
 
         //Methoden
         public Color getFarbe()
@@ -29,8 +31,26 @@ namespace WFA_GeomFigur
         }
         public void setBezeichnung(string newBezeichnung)
         {
-            bezeichnung = newBezeichnung;
+            if (string.IsNullOrEmpty(newBezeichnung))
+            {
+                bezeichnung = getFigurTyp();
+            }
+            else
+            {
+                bezeichnung = newBezeichnung;
+            }
         }
+
+        public string getFigurTyp()
+        {
+            return figurTyp;
+        }
+
+        public void setFigurTyp(string newFigurTyp)
+        {
+            figurTyp = newFigurTyp;
+        }
+
         public void zeichneFigurImPanel(Panel panel)
         {
             //Panel leeren
@@ -79,6 +99,24 @@ namespace WFA_GeomFigur
         {
             //Methode soll von Spezialisierungen implementiert werden
             throw new NotImplementedException();
+        }
+
+        public virtual void appendDetailsInListViewItems(ListView listView)
+        {
+            //Parameter dem AusgabeListView anfügen
+            ListViewItem item;
+
+            item = new ListViewItem("Bezeichnung");
+            item.SubItems.Add(getBezeichnung());
+            listView.Items.Add(item);
+
+            item = new ListViewItem("Typ");
+            item.SubItems.Add(getFigurTyp());
+            listView.Items.Add(item);
+
+            item = new ListViewItem("Farbe");
+            item.SubItems.Add(getFarbe().Name);
+            listView.Items.Add(item);
         }
     }
 }

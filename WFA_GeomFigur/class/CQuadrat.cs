@@ -14,8 +14,10 @@ namespace WFA_GeomFigur
         private double seitenlaenge;
 
         //Konstruktor
-        public CQuadrat(double seitenlaenge, Color farbe)
+        public CQuadrat(string bezeichnung, double seitenlaenge, Color farbe)
         {
+            setFigurTyp("Quadrat");
+            setBezeichnung(bezeichnung);
             setSeitenlaenge(seitenlaenge);
             setFarbe(farbe);
         }
@@ -36,12 +38,24 @@ namespace WFA_GeomFigur
         }
         public override double getUmfang()
         {
-            return Math.Pow(seitenlaenge, 2);
+            return seitenlaenge * 4;
         }
 
         public override void zeichneFigur(Graphics graphics, SolidBrush solidBrush, Rectangle coordinates)
         {         
             graphics.FillRectangle(solidBrush, coordinates);
+        }
+
+        public override void appendDetailsInListViewItems(ListView listView)
+        {
+            base.appendDetailsInListViewItems(listView);
+
+            //Parameter dem AusgabeListView anfügen
+            ListViewItem item;
+
+            item = new ListViewItem("Seitenlänge");
+            item.SubItems.Add(getSeitenlaenge().ToString());
+            listView.Items.Add(item);
         }
     }
 }

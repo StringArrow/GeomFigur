@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace WFA_GeomFigur
 {
@@ -13,8 +14,10 @@ namespace WFA_GeomFigur
         private double kantenlaenge;
 
         //Konstruktor
-        public CWuerfel(double kantenlaenge, Color farbe)
+        public CWuerfel(string bezeichnung, double kantenlaenge, Color farbe)
         {
+            setFigurTyp("Würfel");
+            setBezeichnung(bezeichnung);
             setKantenlaenge(kantenlaenge);
             setFarbe(farbe);
         }
@@ -36,7 +39,6 @@ namespace WFA_GeomFigur
         {
             return Math.Pow(kantenlaenge, 3);
         }
-
         public override void zeichneFigur(Graphics graphics, SolidBrush solidBrush, Rectangle coordinates)
         {
             //Lord forgive me for what I am about to code ✝
@@ -68,6 +70,17 @@ namespace WFA_GeomFigur
 
             //Vordere Seite zum Schluss zeichnen, da diese ganz Vorne ist.
             graphics.FillRectangle(solidBrush, front);
+        }
+        public override void appendDetailsInListViewItems(ListView listView)
+        {
+            base.appendDetailsInListViewItems(listView);
+
+            //Parameter dem AusgabeListView anfügen
+            ListViewItem item;
+
+            item = new ListViewItem("Kantenlänge");
+            item.SubItems.Add(getKantenlaenge().ToString());
+            listView.Items.Add(item);
         }
     }
 }

@@ -46,10 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="class\CFigurenHandler.cs" />
     <Compile Include="class\CFlaeche.cs" />
     <Compile Include="class\CGeomFigur.cs" />
     <Compile Include="class\CKoerper.cs" />
     <Compile Include="class\CKreis.cs" />
+    <Compile Include="class\CGeomFigurCreator.cs" />
     <Compile Include="class\CQuadrat.cs" />
     <Compile Include="class\CRechteck.cs" />
     <Compile Include="class\CKugel.cs" />
@@ -60,10 +62,19 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormFigur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFigur.Designer.cs">
+      <DependentUpon>FormFigur.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFigur.resx">
+      <DependentUpon>FormFigur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
