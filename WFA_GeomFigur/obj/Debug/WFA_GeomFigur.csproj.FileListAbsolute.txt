@@ -21,3 +21,4 @@ C:\Users\schnu\source\repos\StringArrow\GeomFigur\WFA_GeomFigur\bin\Debug\WFA_Ge
 C:\Users\schnu\source\repos\StringArrow\GeomFigur\WFA_GeomFigur\bin\Debug\WFA_GeomFigur.exe
 C:\Users\schnu\source\repos\StringArrow\GeomFigur\WFA_GeomFigur\bin\Debug\WFA_GeomFigur.pdb
 C:\Users\Schnurpfeil\source\repos\StringArrow\GeomFigur\WFA_GeomFigur\obj\Debug\WFA_GeomFigur.FormFigur.resources
+C:\Users\schnu\source\repos\StringArrow\GeomFigur\WFA_GeomFigur\obj\Debug\WFA_GeomFigur.FormFigur.resources
